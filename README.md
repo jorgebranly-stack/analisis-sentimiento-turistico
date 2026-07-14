@@ -55,23 +55,19 @@ El dataset se carga directamente desde Hugging Face con la librería `datasets`,
 ## Estructura del proyecto
 
 Proyecto_final_PLN/
-│
+├── README.md                      
+├── requirements.txt               
 ├── src/
-│   ├── preprocesamiento.py
-│   ├── modelado_temas.py
-│   ├── clasificador_clasico.py
-│   ├── clasificador_beto.py
-│   ├── sentimiento_aspectos.py
-│   └── interfaz_gradio.py
-│
+│   ├── preprocesamiento.py        
+│   ├── modelado_temas.py          
+│   ├── clasificador_clasico.py    
+│   ├── clasificador_beto.py       
+│   ├── sentimiento_aspectos.py    
+│   └── interfaz_gradio.py         
 ├── notebook/
-│   └── Proyecto_Turismo_NLP.ipynb
-│
-├── docs/
-│   └── ARQUITECTURA.md
-│
-├── requirements.txt
-└── README.md
+│   └── Proyecto_Turismo_NLP.ipynb 
+└── docs/
+    └── ARQUITECTURA.md            
 
 ---
 

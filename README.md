@@ -53,21 +53,59 @@ El dataset se carga directamente desde Hugging Face con la librería `datasets`,
 ---
 
 ## Estructura del proyecto
-
 Proyecto_final_PLN/
-├── README.md                      
-├── requirements.txt               
+│
 ├── src/
-│   ├── preprocesamiento.py        
-│   ├── modelado_temas.py          
-│   ├── clasificador_clasico.py    
-│   ├── clasificador_beto.py       
-│   ├── sentimiento_aspectos.py    
-│   └── interfaz_gradio.py         
+│   ├── preprocesamiento.py
+│   ├── modelado_temas.py
+│   ├── clasificador_clasico.py
+│   ├── clasificador_beto.py
+│   ├── sentimiento_aspectos.py
+│   └── interfaz_gradio.py
+│
 ├── notebook/
-│   └── Proyecto_Turismo_NLP.ipynb 
-└── docs/
-    └── ARQUITECTURA.md            
+│   └── Proyecto_Turismo_NLP.ipynb
+│
+├── docs/
+│   └── ARQUITECTURA.md
+│
+├── requirements.txt
+└── README.md
+
+---
+
+## Desarrollo del proyecto
+
+### 1. Preprocesamiento
+
+Antes de entrenar los modelos se prepararon las reseñas. Las tareas principales fueron:
+
+* Conversión del texto a minúsculas.
+* Eliminación de URLs, menciones y caracteres especiales.
+* Eliminación de palabras vacías (*stopwords*).
+* Tokenización y lematización con **spaCy**.
+* Conservación de las negaciones, importantes para el análisis de sentimiento.
+
+Se generaron dos versiones del texto: una limpieza exhaustiva para los modelos clásicos (TF-IDF y LDA) y una limpieza ligera para BETO, que aprovecha mejor el contexto completo.
+
+### 2. Modelado de temas
+
+Para descubrir los temas presentes en las reseñas se utilizó el algoritmo **LDA (Latent Dirichlet Allocation)** implementado con **gensim**, trabajando sobre el texto lematizado.
+
+### 3. Clasificación de sentimiento
+
+El proyecto compara dos enfoques sobre el mismo conjunto de prueba:
+
+* **Modelo clásico:** TF-IDF (unigramas y bigramas) con Multinomial Naive Bayes como línea base.
+* **Modelo neuronal:** BETO (`dccuchile/bert-base-spanish-wwm-uncased`) afinado para clasificación de sentimiento de tres clases.
+
+### 4. Sentimiento por aspecto
+
+Además del sentimiento general, el sistema detecta el sentimiento de cuatro aspectos: comida, servicio, limpieza y precio. Se localizan las frases que mencionan cada aspecto y se evalúa su sentimiento con un modelo de sentimiento en español.
+
+### 5. Interfaz
+
+La interfaz en **Gradio** ofrece dos modos: análisis de una reseña individual (estrellas estimadas y sentimiento por aspecto) y análisis por lote a partir de un archivo CSV.
 
 ---
 
@@ -97,6 +135,7 @@ El modelo neuronal (BETO) supera al clásico en aproximadamente 7 puntos. La cla
 ---
 
 ## Autor
-Jorge Branly Carrizales Yampara
+
+Jorge Branly Carrizales Yampara — Proyecto final del módulo de PLN.
 
 

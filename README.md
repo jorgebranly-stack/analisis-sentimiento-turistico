@@ -100,7 +100,7 @@ El modelo neuronal (BETO) supera al clásico en aproximadamente 7 puntos. La cla
 
 ---
 
-## Autora
+## Autor
+Jorge Branly Carrizales Yampara
 
-Grace Romero — Proyecto final del módulo de PLN.
 

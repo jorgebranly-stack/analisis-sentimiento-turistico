@@ -1,0 +1,13 @@
+datasets
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+nltk
+spacy
+gensim
+transformers
+torch
+gradio
+wordcloud

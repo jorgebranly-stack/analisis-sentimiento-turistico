@@ -37,7 +37,8 @@ Sentimiento por aspecto
 
             ↓
 
-Interfaz en Gradio
+Interfaz en gradio
+
 ---
 
 ## Dataset utilizado

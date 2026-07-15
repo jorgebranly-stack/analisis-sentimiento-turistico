@@ -16,16 +16,27 @@ Finalmente se construyó una interfaz en **Gradio** donde el usuario pega una re
 
 ## Flujo general del proyecto
 Carga del dataset (Hugging Face)
-↓
+
+            ↓
+
 Preprocesamiento del texto
-↓
+
+            ↓
+
+
 Modelado de temas (LDA)
-↓
+
+            ↓
+
 Clasificación de sentimiento
 (Naive Bayes vs. BETO)
-↓
+
+            ↓
+
 Sentimiento por aspecto
-↓
+
+            ↓
+
 Interfaz en Gradio
 ---
 

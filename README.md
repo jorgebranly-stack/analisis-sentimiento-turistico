@@ -79,7 +79,7 @@ analisis-sentimiento-turistico/
 │   └── Proyecto_Turismo_NLP.ipynb
 ├── docs/
 │   ├── ARQUITECTURA.md
-│   └── informe.pdf
+│   └── Informe.pdf
 ├── requirements.txt
 └── README.md
 ```

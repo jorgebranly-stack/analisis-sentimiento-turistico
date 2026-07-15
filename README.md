@@ -53,24 +53,21 @@ El dataset se carga directamente desde Hugging Face con la librería `datasets`,
 ---
 
 ## Estructura del proyecto
-Proyecto_final_PLN/
-│
-├── src/
-│   ├── preprocesamiento.py
-│   ├── modelado_temas.py
-│   ├── clasificador_clasico.py
-│   ├── clasificador_beto.py
-│   ├── sentimiento_aspectos.py
-│   └── interfaz_gradio.py
-│
-├── notebook/
-│   └── Proyecto_Turismo_NLP.ipynb
-│
-├── docs/
-│   └── ARQUITECTURA.md
-│
-├── requirements.txt
-└── README.md
+analisis-sentimiento-turistico/
+├── src/                        # Código fuente principal del proyecto
+│   ├── preprocesamiento.py     # Scripts de limpieza y tokenización de texto
+│   ├── modelado_temas.py       # Algoritmos para topic modeling (ej. LDA, BERTopic)
+│   ├── clasificador_clasico.py # Modelos de clasificación tradicionales (ej. SVM, Naive Bayes)
+│   ├── clasificador_beto.py    # Clasificación usando el modelo BETO (Spanish BERT)
+│   ├── sentimiento_aspectos.py # Análisis de sentimiento basado en aspectos (ABSA)
+│   └── interfaz_gradio.py      # Interfaz de usuario web interactiva
+├── notebook/                   # Entornos de experimentación
+│   └── Proyecto_Turismo_NLP.ipynb 
+├── docs/                       # Documentación adicional del proyecto
+│   ├── ARQUITECTURA.md         # Detalles de la arquitectura del sistema y modelos
+│   └── informe.pdf             # Informe final detallado del proyecto en formato PDF
+├── requirements.txt            # Dependencias de Python necesarias para ejecutar el proyecto
+└── README.md                   # Documentación principal del repositorio
 
 ---
 

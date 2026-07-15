@@ -53,6 +53,7 @@ El dataset se carga directamente desde Hugging Face con la librería `datasets`,
 ---
 
 ## Estructura del proyecto
+
 analisis-sentimiento-turistico/
 ├── src/                        # Código fuente principal del proyecto
 │   ├── preprocesamiento.py     # Scripts de limpieza y tokenización de texto
@@ -68,6 +69,7 @@ analisis-sentimiento-turistico/
 │   └── informe.pdf             # Informe final detallado del proyecto en formato PDF
 ├── requirements.txt            # Dependencias de Python necesarias para ejecutar el proyecto
 └── README.md                   # Documentación principal del repositorio
+
 
 ---
 
